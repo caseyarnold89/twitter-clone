@@ -55,7 +55,17 @@ $(document).ready(function() {
        $('#char-count').text(140);
    });
    
-   
+   //TWEET INTERACTION
+   $('#tweet').hover(function(){
+       $('#tweet-actions').addClass(':hover');
+   });
+     
+    $('tweet').on('click', function(){
+        $('stats').toggle(function() {
+            $(this).animate({},200);
+        });    
+   });
+  
    
    
 });
